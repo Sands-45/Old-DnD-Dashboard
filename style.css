@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+*{
+	font-family: 'Signika Negative', sans-serif;
+}
+:root{
+	--primary:#0d6ffc;
+	--secondary:#6c747c;
+	--bg_black:#000;
+} 
+.bg-black{
+	background: #000 !important;
+}
+/* Custom Centering */
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+ /* Sidenav */
+ #navbar{
+	 transition: width .5s, transform 1s;
+	 transform-origin: left;
+ }
+ .logoD{
+	 border-radius: 5%;
+ }
+#logo{
+	pointer-events: none;
+}
+
+ .sidebar-menu li{
+	 margin-top: 0.2rem;
+	 color:var(--secondary);
+	 transition: margin-left .5s;
+	 font-size: medium;
+ }
+
+ .sidebar-menu li:hover{
+	 color: #fff;
+	 margin-left: 0.2rem;
+ }
+ .sidebar-menu li.active{
+	 background: none !important;
+ }
+ .sidebar-menu li.active i{
+	border-bottom:solid 2px var(--primary) !important;
+	color:var(--primary);
+ }
+ .navbar h6{
+	 font-size: small;
+ }
+ #controls{
+	 border-radius: 0.5rem;
+ }
+#controls span{
+  transition: color 1s;
+  font-size: 1.2rem;
+}
+#controls span:hover{
+  color :#fff;
+}
+/* Sidebar Contents  */
+.level{
+	background:var(--bg_black);
+	border-radius: 0.5rem;
+}
+/* Charts or Dashboards Reports */
+.round-img{
+	border-radius: 50% !important;
+}
+#chartOne{
+	border-radius: 0.5rem;
+}
+#v-pills-home .box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#v-pills-home .box img {
+  max-width: 3rem;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+#chartOne, #tableOne {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/* ========Forms Drop-Down============*/
+#dropdown {
+  position: relative;
+}
+.w3-modal-content {
+  position: absolute;
+  left:10%;
+  border-radius: 0.5rem;
+}
+.forms-content {
+  background: transparent !important;
+  height: 40vw;
+}
+
+/*------------Dashboards--------------*/
+.is-fullwidth {
+  margin: 0;
+  padding: 1px;
+  border: 0;
+}
+.iframe-container {
+  min-height: 300px;
+  border-radius: 0.5rem;
+  background: var(--bg_black) url("./images/gearLoader2.gif") no-repeat 50% center;
+}
+iframe {
+  overflow: hidden !important;
+}
+.iframe-container::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}

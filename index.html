@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Home</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="bg-dark row flex-nowrap">
+			<div id="navbar" class="col-auto col-md-2 col-xl-2
+		 bg-black border-end border-secondary
+		 navbar d-none d-lg-block navbar-expand-lg">
+				<!-- SideNav-Items -->
+				<div class="sidebar-menu nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+					aria-orientation="vertical">
+
+					<div id="controls" class="text-primary bg-dark mt-5 p-1 center">
+						<span class="p-1"><i class="bi bi-app-indicator"></i></span>
+						<span class="p-1"><i class="bi bi-gear"></i></span>
+						<span class="p-1"><i class="bi bi-toggle-off"></i></span>
+						<span class="p-1"><i class="bi bi-box-arrow-right"></i></span>
+					</div>
+
+					<div id="user" class="text-light pt-1 mb-4">
+						<img src="./images/gearLoader2.gif" class="w-25 rounded m-1 mt-3 logoD mx-auto d-block"
+							alt="LOGO">
+					</div>
+
+					<h6 class="text-primary mt-5"><span><i class="fas fa-headset"></i> AGENTS</span></h6>
+					<li class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+						aria-selected="true" onclick='document.getElementById("subhead").innerHTML="Dashboards & Reports ";
+						document.getElementById("quote").innerHTML="I hope you are having a great day 😉\!"'>
+						<i class="bi bi-clipboard-data"></i> Home
+					</li>
+
+					<li class="nav-link" id="v-pills-agents-tab" data-bs-toggle="pill" data-bs-target="#v-pills-agents"
+						type="button" role="tab" aria-controls="v-pills-agents" aria-selected="false" onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/55d26a2f-d344-4d37-a8fb-34c792c804d1/page/jKlQC";
+						document.getElementById("subhead").innerHTML="Agents Report ";
+						document.getElementById("quote").innerHTML="I hope you are having a great day 😉\!"'><i
+							class="bi bi-clipboard-data"></i> Agents</li>
+
+					<li class="nav-link" id="v-pills-credits-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-credits" type="button" role="tab" aria-controls="v-pills-credits"
+						aria-selected="false"
+						onclick='document.getElementById("dashboards2").src= "https:/\/datastudio.google.com/embed/reporting/2e1b5d10-d855-44b6-b498-953932a08a59/page/jKlQC";
+						document.getElementById("subhead").innerHTML="Call-Center Credits ";
+						document.getElementById("quote").innerHTML="\"Your most unhappy customers are your greatest source of learning.\" - Bill Gates📚"'>
+						<i class="bi bi-cart-x"></i> Credits
+					</li>
+
+					<li class="nav-link" id="v-pills-compliments-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-compliments" type="button" role="tab"
+						aria-controls="v-pills-compliments" aria-selected="false" onclick='document.getElementById("dashboards3").src= "https:/\/datastudio.google.com/embed/reporting/c00b9e97-0fd5-422c-b3c2-fe1ec1b933e6/page/95gGC";
+						document.getElementById("subhead").innerHTML="These are Compliments ";
+						document.getElementById("quote").innerHTML="\"Always have an attitude of gratitude.\"- James R. Nowlin 🤞"'>
+						<i class="bi bi-emoji-smile"></i>
+						Compliments
+					</li>
+
+					<h6 class="text-primary mt-2"><span><i class="fas fa-users"></i> ADMINISTRATION</span></h6>
+					<li class="nav-link" id="v-pills-shops-tab" data-bs-toggle="pill" data-bs-target="#v-pills-shops"
+						type="button" role="tab" aria-controls="v-pills-shops" aria-selected="false"><i
+							class="bi bi-shop"></i>
+						Shops</li>
+					<li class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+						aria-selected="false"><i class="bi bi-telephone-x"></i> Incomplete Calls</li>
+					<li class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+						aria-selected="false"><i class="bi bi-mic"></i> Recordings</li>
+
+					<h6 class="text-primary mt-2"><span><i class="fas fa-file-signature"></i> DISCIPLINARY</span></h6>
+					<li class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+						aria-selected="false"><i class="bi bi-file-earmark-richtext"></i> Warning Tracker</li>
+					<li class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+						aria-selected="false"><i class="bi bi-calendar2-x"></i> Schedules</li>
+
+					<a id="logo" href="#" class="navbar-brand mt-5 center">
+						<button type="button" class="btn bg-dark text-primary">
+							<h4 class="m-0"><i class="fab fa-dyalog"></i>ial n' Dine</h4>
+						</button>
+					</a>
+				</div>
+			</div>
+
+			<div class="col pb-5">
+				<!-- Sidenavs Content -->
+				<div id="sidenav-content" class="container p-3">
+					<section class="hero level is-small">
+						<div class="hero-body">
+							<div class="columns position-relative">
+
+								<div class="column is-2">
+									<button onclick="sideBar();" type="button"
+										class="btn position-absolute start-0 btn-outline-light">
+										<i class="bi bi-list"></i>
+									</button>
+								</div>
+
+								<div class="column center is-8">
+									<h1 class="title is-size-3  text-secondary">
+										<span id="subhead">Dashboards & Reports </span><i
+											class="bi bi-clipboard-data"></i>
+									</h1>
+									<h2 id="quote" class="subtitle is-size-6 text-primary">
+										I hope you are having a great day 🙂!
+									</h2>
+								</div>
+
+								<div class="column is-2">
+									<div class="dropdown position-absolute end-0">
+										<button class="btn btn-outline-light dropdown-toggle" type="button"
+											id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+											<i class="bi bi-ui-checks"></i> Forms
+										</button>
+										<ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+											<li>
+												<a onclick="document.getElementById('modal01').style.display='block'"
+													class="dropdown-item text-primary" href="#">Compliments
+												</a>
+											</li>
+											<li>
+												<a onclick="document.getElementById('modal02').style.display='block'"
+													class="dropdown-item text-primary" href="#">Queries
+												</a>
+											</li>
+											<li>
+												<a onclick="document.getElementById('modal03').style.display='block'"
+													class="dropdown-item text-primary" href="#">Incomplete Calls
+												</a>
+											</li>
+										</ul>
+									</div>
+
+									<!--------Drop Down Modals-------->
+									<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+										<div class="w3-modal-content forms-content w3-animate-zoom">
+											<iframe class="center"
+												src="https://docs.google.com/forms/d/e/1FAIpQLSeclf0ED7z2FYoKq78QMShSI4vi9HekZFy9for0GoYd9gYbBg/viewform?embedded=true"
+												width="640" height="100%" frameborder="0" marginheight="0"
+												marginwidth="0">Loading…
+											</iframe>
+										</div>
+									</div>
+
+									<div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+										<div class="w3-modal-content forms-content w3-animate-zoom">
+											<iframe class="center"
+												src="https://docs.google.com/forms/d/e/1FAIpQLSesYHJR5PxbKtJ3RCeciwyBYJgBm0xMTRqLrWEz8epocbMAhw/viewform?embedded=true"
+												width="640" height="100%" frameborder="0" marginheight="0"
+												marginwidth="0">Loading…
+											</iframe>
+										</div>
+									</div>
+
+									<div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+										<div class="w3-modal-content forms-content w3-animate-zoom">
+											<iframe class="center"
+												src="https://docs.google.com/forms/d/e/1FAIpQLSefk-lKqC9cVPjsRbuZXdyTkfAClk-O3bjR9qfFpGId65k2kw/viewform?embedded=true"
+												width="640" height="100%" frameborder="0" marginheight="0"
+												marginwidth="0">Loading…
+											</iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--------End of Drop Down Modals-------->
+						</div>
+					</section>
+
+					<!-- Tabs -->
+					<div class="tab-content" id="v-pills-tabContent">
+						<!---     Home   --->
+						<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+							aria-labelledby="v-pills-home-tab">
+
+							<div class="columns">
+								<div class="column pt-0 is-one-quarter">
+									<div class="box bg-black ">
+										<article class="media mb-2">
+											<img class="round-img" src="./images/pro.png" alt="Image" />
+											<div class="media-content has-text-white">
+												<p class="pl-2">Sands QA <span class="text-primary"><i
+															class="bi bi-check-circle-fill"></i></span></p>
+												<small class="pl-2 text-muted">Performance Analyst</small>
+											</div>
+										</article>
+										<small class="text-muted">3 from 5 tasks completed</small>
+										<div class="progress bg-dark">
+											<div class="progress-bar" role="progressbar" style="width: 75%;"
+												aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="column pt-0 is-one-quarter">
+									<div class="box bg-black">
+										<article class="media mb-2">
+											<img class="round-img" src="./images/user-2.jfif" alt="Image" />
+											<div class="media-content has-text-white">
+												<p class="pl-2">Tendani <span class="text-danger"><i
+															class="bi bi-check-circle-fill"></i></span></p>
+												<small class="pl-2 text-muted">Quality Assurer</small>
+											</div>
+										</article>
+										<small class="text-muted">2 from 5 tasks completed</small>
+										<div class="progress bg-dark">
+											<div class="progress-bar bg-danger" role="progressbar" style="width: 40%;"
+												aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="column pt-0 is-one-quarter">
+									<div class="box bg-black">
+										<article class="media mb-2">
+											<img class="round-img" src="./images/user-1.jfif" alt="Image" />
+											<div class="media-content has-text-white">
+												<p class="pl-2">Samkele M <span class="text-info"><i
+															class="bi bi-check-circle-fill"></i></span></p>
+												<small class="pl-2 text-muted">Junior Managers</small>
+											</div>
+										</article>
+										<small class="text-muted">4 from 5 tasks completed</small>
+										<div class="progress bg-dark">
+											<div class="progress-bar bg-info" role="progressbar" style="width: 85%;"
+												aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="column pt-0 is-one-quarter">
+									<div class="box bg-black">
+										<article class="media mb-2">
+											<img class="round-img" src="./images/user-4.jfif" alt="Image" />
+											<div class="media-content has-text-white">
+												<p class="pl-2">Nomsa N <span class="text-info"><i
+															class="bi bi-check-circle-fill"></i></span></p>
+												<small class="pl-2 text-muted">Senior Manager</small>
+											</div>
+										</article>
+										<small class="text-muted">4 from 5 tasks completed</small>
+										<div class="progress bg-dark">
+											<div class="progress-bar bg-info" role="progressbar" style="width: 85%;"
+												aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns pl-3">
+								<div id="chartOne" class="column is-7 bg-black"></div>
+								<div class="column pt-0 pb-0 is-5">
+									<div id="tableOne" class="card bg-black">
+										<div class="card-content">
+											<table class="table bg-black">
+												<thead>
+													<tr>
+														<th class="has-text-light float-start">KPI's</th>
+														<th class="has-text-light">Stats &nbsp;<span
+																class="text-primary">
+																<i class="bi bi-reception-3"></i>
+															</span>
+														</th>
+													</tr>
+
+												</thead>
+												<tr>
+													<td>Calls</td>
+													<td>23 046
+														<span class="text-danger"><i
+																class="bi bi-arrow-down-circle"></i></span>
+													</td>
+												</tr>
+												<tr>
+													<td>Transactions</td>
+													<td>16 857
+														<span class="text-danger"><i
+																class="bi bi-arrow-down-circle"></i></span>
+													</td>
+												</tr>
+												<tr>
+													<td>Abd Rate</td>
+													<td>5.2% &nbsp;&nbsp;
+														<span class="text-info"><i
+																class="bi bi-arrow-down-circle"></i></span>
+													</td>
+												</tr>
+												<tr>
+													<td>Order Rate</td>
+													<td>61.2%&nbsp;
+														<span class="text-info"><i
+																class="bi bi-arrow-up-circle"></i></span>
+													</td>
+												</tr>
+												<tr>
+													<td>Upsell %</td>
+													<td>8.2% &nbsp;&nbsp;
+														<span class="text-info"><i
+																class="bi bi-arrow-up-circle"></i></span>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<nav class="level p-5 is-mobile">
+								<div class="level-item has-text-centered">
+									<div>
+										<p class="heading">Reports</p>
+										<p class="title">8.0</p>
+									</div>
+								</div>
+								<div class="level-item has-text-centered">
+									<div>
+										<p class="heading">Data Source</p>
+										<p class="title">11</p>
+									</div>
+								</div>
+								<div class="level-item has-text-centered">
+									<div>
+										<p class="heading">Agents</p>
+										<p class="title">75</p>
+									</div>
+								</div>
+								<div class="level-item has-text-centered">
+									<div>
+										<p class="heading">Team Mebers</p>
+										<p class="title">8.0</p>
+									</div>
+								</div>
+							</nav>
+						</div>
+
+						<!---     Agents   --->
+						<div class="tab-pane fade show" id="v-pills-agents" role="tabpanel"
+							aria-labelledby="v-pills-agents-tab">
+							<div>
+								<div class="iframe-container" style="position:relative;padding-top:52.25%;">
+									<iframe name="dashboards" id="dashboards" src="" frameborder="0" allowfullscreen
+										style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+								</div>
+							</div>
+						</div>
+
+						<!---     Credits   --->
+						<div class="tab-pane fade" id="v-pills-credits" role="tabpanel"
+							aria-labelledby="v-pills-credits-tab">
+							<div>
+								<div class="iframe-container" style="position:relative;padding-top:52.25%;">
+									<iframe name="dashboards" id="dashboards2" src="" frameborder="0" allowfullscreen
+										style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+								</div>
+							</div>
+						</div>
+
+						<!---     Compliments   --->
+						<div class="tab-pane fade" id="v-pills-compliments" role="tabpanel"
+							aria-labelledby="v-pills-compliments-tab">
+							<div>
+								<div class="iframe-container" style="position:relative;padding-top:52.25%;">
+									<iframe name="dashboards" id="dashboards3" src="" frameborder="0" allowfullscreen
+										style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+								</div>
+							</div>
+						</div>
+
+						<!---     Shops   --->
+						<div class="tab-pane fade" id="v-pills-shops" role="tabpanel"
+							aria-labelledby="v-pills-shops-tab">
+							...4th
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="./script.js"></script>
+	<!-- jQuery CDN - Slim version (=without AJAX) -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

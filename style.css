@@ -2,6 +2,10 @@
 *{
 	font-family: 'Signika Negative', sans-serif;
 }
+html, body{
+	margin: 0;
+	padding: 0;
+}
 :root{
 	--primary:#0d6ffc;
 	--secondary:#6c747c;
@@ -9,6 +13,9 @@
 } 
 .bg-black{
 	background: #000 !important;
+}
+.body{
+	min-height: 100vh;
 }
 /* Custom Centering */
 .center{

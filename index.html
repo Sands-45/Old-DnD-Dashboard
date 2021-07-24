@@ -18,20 +18,21 @@
 <body>
 	<div class="container-fluid">
 		<div class="bg-dark body row flex-nowrap">
+
+			<!-- Nav Bar -->
 			<div id="navbar" class="col-auto col-md-2 col-xl-2
 		 bg-black border-end border-secondary
 		 navbar d-none d-lg-block navbar-expand-lg">
 				<!-- SideNav-Items -->
 				<div class="sidebar-menu nav flex-column nav-pills" id="v-pills-tab" role="tablist"
 					aria-orientation="vertical">
-
+					<!-- Controls-->
 					<div id="controls" class="text-primary bg-dark mt-5 p-1 center">
 						<span class="p-1"><i class="bi bi-app-indicator"></i></span>
 						<span class="p-1"><i class="bi bi-gear"></i></span>
 						<span class="p-1"><i class="bi bi-toggle-off"></i></span>
 						<span class="p-1"><i class="bi bi-box-arrow-right"></i></span>
 					</div>
-
 					<div id="user" class="text-light pt-1 mb-4">
 						<img src="./images/gearLoader2.gif" class="w-25 rounded m-1 mt-3 logoD mx-auto d-block"
 							alt="LOGO">
@@ -45,11 +46,13 @@
 						<i class="bi bi-columns-gap"></i> Projects
 					</li>
 
-					<li class="nav-link" id="v-pills-agents-tab" data-bs-toggle="pill" data-bs-target="#v-pills-agents"
-						type="button" role="tab" aria-controls="v-pills-agents" aria-selected="false" onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/55d26a2f-d344-4d37-a8fb-34c792c804d1/page/jKlQC";
-						document.getElementById("subhead").innerHTML="Agents Report <i class=\"bi bi-clipboard-data\"></i>";
-						document.getElementById("quote").innerHTML="I hope you are having a great day 😉\!"'><i
-							class="bi bi-clipboard-data"></i> Agents</li>
+					<li class="nav-link" id="v-pills-appraisals-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-appraisals" type="button" role="tab" aria-controls="v-pills-appraisals"
+						aria-selected="false"
+						onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/d055e3ac-b7c1-435b-b63d-68ac9e99eefc/page/p_gk2ba1vvlc";
+						document.getElementById("subhead").innerHTML="Performance Appraisals <i class=\"bi bi-clipboard-data\"></i>";
+						document.getElementById("quote").innerHTML="“Leadership and learning are indispensable to each other.”John F. Kennedy 📊\!"'><i
+							class="bi bi-clipboard-data"></i> Appraisals</li>
 
 					<li class="nav-link" id="v-pills-credits-tab" data-bs-toggle="pill"
 						data-bs-target="#v-pills-credits" type="button" role="tab" aria-controls="v-pills-credits"
@@ -96,21 +99,21 @@
 					</a>
 				</div>
 			</div>
+			<!-- End Of NavBar -->
 
 			<div class="col">
 				<!-- Sidenavs Content -->
 				<div id="sidenav-content" class="container p-3">
+					<!-- Top Section -->
 					<section class="hero level is-small mb-1">
 						<div class="hero-body">
 							<div class="columns position-relative">
-
 								<div class="column is-2">
 									<button onclick="sideBar();" type="button"
 										class="btn position-absolute start-0 btn-outline-secondary">
 										<i class="bi bi-list"></i>
 									</button>
 								</div>
-
 								<div class="column center is-8">
 									<h1 class="title is-size-3  text-secondary">
 										<span id="subhead">Projects & Reports <i class="bi bi-columns-gap"></i></span>
@@ -119,7 +122,6 @@
 										I hope you are having a great day 🙂!
 									</h2>
 								</div>
-
 								<div class="column is-2">
 									<div class="dropdown position-absolute end-0">
 										<button class="btn btn-outline-secondary dropdown-toggle" type="button"
@@ -155,7 +157,6 @@
 											</iframe>
 										</div>
 									</div>
-
 									<div id="modal02" class="w3-modal" onclick="this.style.display='none'">
 										<div class="w3-modal-content forms-content w3-animate-zoom">
 											<iframe class="center"
@@ -165,7 +166,6 @@
 											</iframe>
 										</div>
 									</div>
-
 									<div id="modal03" class="w3-modal" onclick="this.style.display='none'">
 										<div class="w3-modal-content forms-content w3-animate-zoom">
 											<iframe class="center"
@@ -180,14 +180,15 @@
 							<!--------End of Drop Down Modals-------->
 						</div>
 					</section>
+					<!-- End Of Top Section-->
 
 					<!-- Tabs -->
 					<div class="tab-content" id="v-pills-tabContent">
-						<!---     Home   --->
+						<!---     Projects /Home  --->
 						<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
 							aria-labelledby="v-pills-home-tab">
-
 							<div class="columns mt-3">
+
 								<div class="column pt-0 is-one-quarter">
 									<div class="box bg-black ">
 										<article class="media mb-2">
@@ -205,7 +206,6 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="column pt-0 is-one-quarter">
 									<div class="box bg-black">
 										<article class="media mb-2">
@@ -223,7 +223,6 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="column pt-0 is-one-quarter">
 									<div class="box bg-black">
 										<article class="media mb-2">
@@ -241,7 +240,6 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="column pt-0 is-one-quarter">
 									<div class="box bg-black">
 										<article class="media mb-2">
@@ -260,8 +258,11 @@
 									</div>
 								</div>
 							</div>
-							<div class="columns pl-3">
+
+							<div class="columns ms-0">
+								<!-- Chart -->
 								<div id="chartOne" class="column is-7 bg-black"></div>
+								<!-- Projects Table-->
 								<div class="column pt-0 pb-0 is-5">
 									<div id="tableOne" class="card bg-black">
 										<div class="card-content">
@@ -275,7 +276,6 @@
 															</span>
 														</th>
 													</tr>
-
 												</thead>
 												<tr>
 													<td>Calls</td>
@@ -317,6 +317,7 @@
 									</div>
 								</div>
 							</div>
+							<!-- Footer Stats -->
 							<nav class="level p-5 is-mobile">
 								<div class="level-item has-text-centered">
 									<div>
@@ -345,9 +346,9 @@
 							</nav>
 						</div>
 
-						<!---     Agents   --->
-						<div class="tab-pane fade show" id="v-pills-agents" role="tabpanel"
-							aria-labelledby="v-pills-agents-tab">
+						<!---     Appraisals Tab   --->
+						<div class="tab-pane fade" id="v-pills-appraisals" role="tabpanel"
+							aria-labelledby="v-pills-appraisals-tab">
 							<div class="mt-0 pt-0">
 								<div class="iframe-container mt-0" style="position:relative;padding-top:52.25%;">
 									<iframe name="dashboards" id="dashboards" src="" frameborder="0" allowfullscreen
@@ -356,18 +357,18 @@
 							</div>
 						</div>
 
-						<!---     Credits   --->
+						<!---     Credits Tab  --->
 						<div class="tab-pane fade" id="v-pills-credits" role="tabpanel"
 							aria-labelledby="v-pills-credits-tab">
-							<div>
-								<div class="iframe-container" style="position:relative;padding-top:52.25%;">
+							<div class="mt-0 pt-0">
+								<div class="iframe-container mt-0" style="position:relative;padding-top:52.25%;">
 									<iframe name="dashboards" id="dashboards2" src="" frameborder="0" allowfullscreen
 										style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 								</div>
 							</div>
 						</div>
 
-						<!---     Compliments   --->
+						<!---     Compliments Tab  --->
 						<div class="tab-pane fade" id="v-pills-compliments" role="tabpanel"
 							aria-labelledby="v-pills-compliments-tab">
 							<div>
@@ -378,7 +379,7 @@
 							</div>
 						</div>
 
-						<!---     Shops   --->
+						<!---     Shops Tab  --->
 						<div class="tab-pane fade" id="v-pills-shops" role="tabpanel"
 							aria-labelledby="v-pills-shops-tab">
 							...4th
@@ -398,10 +399,6 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 	<script src="./script.js"></script>
-	<!-- jQuery CDN - Slim version (=without AJAX) -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
 </body>
 
 </html>

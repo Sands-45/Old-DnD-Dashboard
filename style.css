@@ -122,6 +122,7 @@ html, body{
 }
 iframe {
   overflow: hidden !important;
+  border-radius: 0.5rem;
 }
 .iframe-container::-webkit-scrollbar {
   width: 0px;

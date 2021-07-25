@@ -79,6 +79,7 @@ body::after{
  }
  .logoD{
 	 border-radius: 5%;
+	 border: solid 2px var(--primary);
  }
 #logo{
 	pointer-events: none;

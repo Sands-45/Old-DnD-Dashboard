@@ -26,29 +26,16 @@ html, body{
 	text-align: center;
 }
 
-/* Body animation */
-#body{
-	opacity:0;
-	animation: onload2 2s linear 1.8s forwards;
-}
-@keyframes onload2{
-	from{
-		opacity:0;
-	}
-	to{
-		opacity:1;
-	}
-}
 body::before{
  position: absolute;
  content: "";
  height: 100%;
  width: 100%;
- background:var(--primary);
+ background:rgba(0,0,0.2,0.68);
  background-repeat: no-repeat;
  background-size: cover;
  z-index: 9999;
- animation: onload 2s ease-in-out 1.8s forwards;
+ animation: onload 3s ease-in-out 2s forwards;
 }
 body::after{
  position: absolute;
@@ -56,7 +43,7 @@ body::after{
  bottom:0%;
  width: 100%;
  height: 100%;
- background:url("./images/onload-pseudo.png");
+ background:#000 url("./images/onload-pseudo.png");
  background-size: 40%;
  background-position: center;
  background-repeat: no-repeat;

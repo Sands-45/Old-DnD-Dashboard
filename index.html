@@ -34,8 +34,9 @@
 						<span class="p-1"><i class="bi bi-box-arrow-right"></i></span>
 					</div>
 					<div id="user" class="text-light pt-1 mb-4">
-						<img src="./images/gearLoader2.gif" class="w-25 rounded m-1 mt-3 logoD mx-auto d-block"
+						<img src="./images/user.jpg" class="w-25 rounded m-1 mt-3 logoD mx-auto d-block"
 							alt="LOGO">
+							<small class="center text-primary">@dialndine</small>
 					</div>
 
 					<h6 class="text-primary mt-5"><span><i class="fas fa-headset"></i> AGENTS</span></h6>
@@ -65,12 +66,19 @@
 
 					<li class="nav-link" id="v-pills-compliments-tab" data-bs-toggle="pill"
 						data-bs-target="#v-pills-compliments" type="button" role="tab"
-						aria-controls="v-pills-compliments" aria-selected="false" onclick='document.getElementById("dashboards3").src= "https:/\/datastudio.google.com/embed/reporting/ea997b03-538e-4b50-b512-998a673838e6/page/jKlQC";
+						aria-controls="v-pills-compliments" aria-selected="false" 
+						onclick='document.getElementById("dashboards3").src= "https:/\/datastudio.google.com/embed/reporting/ea997b03-538e-4b50-b512-998a673838e6/page/jKlQC";
 						document.getElementById("subhead").innerHTML="These are Compliments <i class=\"bi bi-emoji-smile\"></i>";
 						document.getElementById("quote").innerHTML="\"Always have an attitude of gratitude.\"- James R. Nowlin 🤞"'>
 						<i class="bi bi-emoji-smile"></i>
 						Compliments
 					</li>
+
+					<li class="nav-link" id="v-pills-upsell-tab" data-bs-toggle="pill" data-bs-target="#v-pills-upsell" type="button"
+						role="tab" aria-controls="v-pills-upsell" aria-selected="false"
+						onclick='document.getElementById("subhead").innerHTML="Upsell Update <i class=\"bi bi-receipt-cutoff\"></i>";
+						document.getElementById("quote").innerHTML="‘Absorb what is useful, discard what is not, add what is uniquely your own’ – Bruce Lee"'>
+						<i class="bi bi-receipt-cutoff"></i> Upsell Update</li>
 
 					<h6 class="text-primary mt-2"><span><i class="fas fa-users"></i> ADMINISTRATION</span></h6>
 					<li class="nav-link" id="v-pills-shops-tab" data-bs-toggle="pill" data-bs-target="#v-pills-shops"
@@ -80,9 +88,6 @@
 					<li class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
 						data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
 						aria-selected="false"><i class="bi bi-telephone-x"></i> Incomplete Calls</li>
-					<li class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-						data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
-						aria-selected="false"><i class="bi bi-mic"></i> Recordings</li>
 
 					<h6 class="text-primary mt-2"><span><i class="fas fa-file-signature"></i> DISCIPLINARY</span></h6>
 					<li class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
@@ -375,6 +380,15 @@
 								<div class="iframe-container" style="position:relative;padding-top:52.25%;">
 									<iframe name="dashboards" id="dashboards3" src="" frameborder="0" allowfullscreen
 										style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+								</div>
+							</div>
+						</div>
+
+						<!---     Upsell Tab  --->
+						<div class="tab-pane w3-animate-bottom" id="v-pills-upsell" role="tabpanel"
+							aria-labelledby="v-pills-upsell-tab">
+							<div>
+								<div class="iframe-container" style="position:relative;padding-top:52.25%;">
 								</div>
 							</div>
 						</div>

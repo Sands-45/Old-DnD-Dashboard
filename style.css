@@ -176,3 +176,24 @@ iframe {
   width: 0px;
   height: 0px;
 }
+/*-------------Admin Access Pass Box------------- */
+#pass-box,
+#pass-box1,
+#pass-box2,
+#pass-box3 {
+  box-sizing: border-box;
+  height: 30%;
+  width: 25%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  border-radius: 0.5rem;
+  padding: 0.5%;
+  display: none;
+  z-index: 99;
+  background: #0967a1;
+}
+/* Delete Button*/
+.delete {
+  float: right;
+}

@@ -27,6 +27,18 @@ html, body{
 }
 
 /* Body animation */
+#body{
+	opacity:0;
+	animation: onload2 2s linear 1.8s forwards;
+}
+@keyframes onload2{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
 body::before{
  position: absolute;
  content: "";

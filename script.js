@@ -23,7 +23,7 @@ function sideBar() {
 var options = {
   series: [
     {
-      name: "Sales",
+      name: "Projects",
       data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5],
     },
   ],

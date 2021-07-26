@@ -18,6 +18,15 @@ function sideBar() {
   }
 }
 
+function sideNav() {
+  var element = document.getElementById("navbar");
+  element.classList.toggle("d-none");
+  transformSetting = document.getElementById("navbar").style.transform =
+    "scale(1, 1)";
+  widthSetting = document.getElementById("navbar").style.width = "16.66666667%";
+  document.getElementById("navbar").style.opacity = "1";
+}
+
 /* Charts or Dashboard Reports */
 //Projects Chart =======================================================
 var options = {

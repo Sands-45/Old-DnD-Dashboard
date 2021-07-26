@@ -1,119 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
-*{
-	font-family: 'Signika Negative', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+* {
+  font-family: "Signika Negative", sans-serif;
 }
-html, body{
-	margin: 0;
-	padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
-:root{
-	--primary:#0d6ffc;
-	--secondary:#6c747c;
-	--bg_black:#000;
-} 
-.bg-black{
-	background: #000 !important;
+:root {
+  --primary: #0d6ffc;
+  --secondary: #6c747c;
+  --bg_black: #000;
 }
-.body{
-	min-height: 100vh;
+.bg-black {
+  background: #000 !important;
+}
+.body {
+  min-height: 100vh;
 }
 
 /* Custom Centering */
-.center{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-body::before{
- position: absolute;
- content: "";
- height: 100%;
- width: 100%;
- background:rgba(0,0,0.2,0.68);
- background-repeat: no-repeat;
- background-size: cover;
- z-index: 9999;
- animation: onload 3s ease-in-out 2s forwards;
+body::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0.2, 0.68);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 9999;
+  animation: onload 3s ease-in-out 2s forwards;
 }
-body::after{
- position: absolute;
- content: "";
- bottom:0%;
- width: 100%;
- height: 100%;
- background:#000 url("./images/onload-pseudo.png");
- background-size: 40%;
- background-position: center;
- background-repeat: no-repeat;
- animation: onload 1.9s ease-in-out 1.7s forwards;
- z-index: 9999;
+body::after {
+  position: absolute;
+  content: "";
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  background: #000 url("./images/onload-pseudo.png");
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: onload 1.9s ease-in-out 1.7s forwards;
+  z-index: 9999;
 }
-@keyframes onload{
-	from{
-        width: 100%;
-	}
-	to{
-		width: 0%;
-	}
-}
-
- /* Sidenav */
- #navbar{
-	 transition: width .5s, transform 1s;
-	 transform-origin: left;
- }
- .logoD{
-	 border-radius: 5%;
-	 border: solid 2px var(--primary);
- }
-#logo{
-	pointer-events: none;
+@keyframes onload {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
 }
 
- .sidebar-menu li{
-	 margin-top: 0.2rem;
-	 color:var(--secondary);
-	 transition: margin-left .5s;
-	 font-size: medium;
- }
+/* Sidenav */
+#navbar {
+  transition: width 0.5s, transform 1s;
+  transform-origin: left;
+}
+.logoD {
+  border-radius: 5%;
+  border: solid 2px var(--primary);
+}
+#logo {
+  pointer-events: none;
+}
 
- .sidebar-menu li:hover{
-	 color: #fff;
-	 margin-left: 0.2rem;
- }
- .sidebar-menu li.active{
-	 background: none !important;
- }
- .sidebar-menu li.active i{
-	border-bottom:solid 2px var(--primary) !important;
-	color:var(--primary);
- }
- .navbar h6{
-	 font-size: small;
- }
- #controls{
-	 border-radius: 0.5rem;
- }
-#controls span{
+.sidebar-menu li {
+  margin-top: 0.2rem;
+  color: var(--secondary);
+  transition: margin-left 0.5s;
+  font-size: medium;
+}
+
+.sidebar-menu li:hover {
+  color: #fff;
+  margin-left: 0.2rem;
+}
+.sidebar-menu li.active {
+  background: none !important;
+}
+.sidebar-menu li.active i {
+  border-bottom: solid 2px var(--primary) !important;
+  color: var(--primary);
+}
+.navbar h6 {
+  font-size: small;
+}
+#controls {
+  border-radius: 0.5rem;
+}
+#controls span {
   transition: color 1s;
   font-size: 1.2rem;
 }
-#controls span:hover{
-  color :#fff;
+#controls span:hover {
+  color: #fff;
 }
 /* Sidebar Contents  */
-.level{
-	background:var(--bg_black);
-	border-radius: 0.5rem;
+.level {
+  background: var(--bg_black);
+  border-radius: 0.5rem;
 }
 /* Charts or Dashboards Reports */
-.round-img{
-	border-radius: 50% !important;
+.round-img {
+  border-radius: 50% !important;
 }
-#chartOne{
-	border-radius: 0.5rem;
+#chartOne {
+  border-radius: 0.5rem;
 }
 #v-pills-home .box {
   display: flex;
@@ -125,18 +126,20 @@ body::after{
   border-radius: 0.5rem;
   margin: 0 auto;
 }
-#chartOne, #tableOne {
+#chartOne,
+#tableOne {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 /* ========Forms Drop-Down============*/
 #dropdown {
   position: relative;
 }
 .w3-modal-content {
   position: absolute;
-  left:10%;
+  left: 10%;
   border-radius: 0.5rem;
 }
 .forms-content {
@@ -153,7 +156,8 @@ body::after{
 .iframe-container {
   min-height: 300px;
   border-radius: 0.5rem;
-  background: var(--bg_black) url("./images/gearLoader2.gif") no-repeat 50% center;
+  background: var(--bg_black) url("./images/gearLoader2.gif") no-repeat 50%
+    center;
 }
 iframe {
   overflow: hidden !important;

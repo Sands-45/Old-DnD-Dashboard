@@ -155,16 +155,15 @@ body::after {
   border: 0;
 }
 .iframe-container {
-  min-height: 300px;
+  min-height: 95vh;
   border-radius: 0.5rem;
   background: var(--bg_black) url("./images/gearLoader2.gif") no-repeat 50%
     center;
 }
 iframe {
-  overflow: hidden !important;
   border-radius: 0.5rem;
 }
-.iframe-container::-webkit-scrollbar {
+iframe::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }

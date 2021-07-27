@@ -102,7 +102,8 @@ body::after {
   transition: color 1s;
   font-size: 1.2rem;
 }
-#controls span:hover {
+#controls span:hover,
+#controls span a:hover {
   color: #fff;
 }
 /* Sidebar Contents  */

@@ -189,3 +189,9 @@ iframe::-webkit-scrollbar {
 .delete {
   float: right;
 }
+
+@media (max-width: 768px) {
+  #projectTable {
+    margin-top: 1rem !important;
+  }
+}

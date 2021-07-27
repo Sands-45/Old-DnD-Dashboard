@@ -79,6 +79,15 @@
 						<i class="bi bi-receipt-cutoff"></i> Upsell Update
 					</li>
 
+					<li class="nav-link" id="v-pills-schedule-tab" data-bs-toggle="pill"
+						data-bs-target="#v-pills-schedule" type="button" role="tab" aria-controls="v-pills-schedule"
+						aria-selected="false"
+						onclick='document.getElementById("dashboards8").src = "";
+						document.getElementById("subhead").innerHTML="Schedules <i class=\"bi bi-calendar2-x\"></i>";
+						document.getElementById("quote").innerHTML="\"A schedule defends from chaos and whim. A net for catching days.\" – Stephan Covey 📅"'>
+						<i class="bi bi-calendar2-x"></i> Schedules
+					</li>
+
 					<h6 class="text-primary mt-2"><span><i class="fas fa-users"></i> ADMINISTRATION</span></h6>
 					<li class="nav-link" id="v-pills-shops-tab" data-bs-toggle="pill" data-bs-target="#v-pills-shops"
 						type="button" role="tab" aria-controls="v-pills-shops" aria-selected="false"
@@ -91,12 +100,11 @@
 					</li>
 					<li class="nav-link" id="v-pills-incomplete-tab" data-bs-toggle="pill"
 						data-bs-target="#v-pills-incomplete" type="button" role="tab"
-						aria-incomplete="v-pills-incomplete" aria-selected="false"
-						onclick='document.getElementById("dashboards6").src = "";
+						aria-incomplete="v-pills-incomplete" aria-selected="false" onclick='document.getElementById("dashboards6").src = "";
 						document.getElementById("pass-box1").style.display ="block";
 						document.getElementById("navbar").style.pointerEvents="none";
-						document.getElementById("subhead").innerHTML="Restaurants Performance <i class=\"bi bi-shop\"></i>";
-						document.getElementById("quote").innerHTML="\"Unless you love everybody, you can’t sell anybody.\" – Dicky Fox 🛍"'>
+						document.getElementById("subhead").innerHTML="Incomplete Calls <i class=\"bi bi-telephone-x\"></i>";
+						document.getElementById("quote").innerHTML="\"Everything Starts with the customer.\" 📞"'>
 						<i class="bi bi-telephone-x"></i> Incomplete Calls
 					</li>
 
@@ -104,10 +112,6 @@
 					<li class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
 						data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
 						aria-selected="false"><i class="bi bi-file-earmark-richtext"></i> Warning Tracker</li>
-
-					<li class="nav-link" id="v-pills-schedule-tab" data-bs-toggle="pill"
-						data-bs-target="#v-pills-schedule" type="button" role="tab" aria-controls="v-pills-schedule"
-						aria-selected="false"><i class="bi bi-calendar2-x"></i> Schedules</li>
 
 					<a id="logo" href="#" class="navbar-brand mt-5 center">
 						<button type="button" class="btn bg-dark text-primary">
@@ -471,11 +475,11 @@
 									style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 							</div>
 						</div>
-						<!---     Incomplete Calls Tab  --->
+						<!---     Schedules Calls Tab  --->
 						<div class="tab-pane w3-animate-bottom" id="v-pills-schedule" role="tabpanel"
 							aria-labelledby="v-pills-schedule-tab">
 							<div class="iframe-container" style="position:relative;padding-top:52.25%;">
-								<iframe name="dashboards6" id="dashboards6" src="" frameborder="0" allowfullscreen
+								<iframe name="dashboards8" id="dashboards8" src="" frameborder="0" allowfullscreen
 									style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 							</div>
 						</div>

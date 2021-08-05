@@ -92,6 +92,14 @@
 						<i class="bi bi-calendar2-x"></i> Schedules
 					</li>
 
+					<li class="nav-link" id="v-pills-calls-tab" data-bs-toggle="pill" data-bs-target="#v-pills-calls"
+						type="button" role="tab" aria-controls="v-pills-calls" aria-selected="false"
+						onclick='document.getElementById("subhead").innerHTML="Calls & Missed Calls <i class=\"bi bi-telephone-plus-fill\"></i>";
+						document.getElementById("dashboards10").src= "https:/\/datastudio.google.com/embed/reporting/51835266-272d-4ce3-82aa-216a6349de48/page/p_x3rjv9zwlc";
+						document.getElementById("quote").innerHTML="‘One customer well taken care of could be more valuable than $10,000 worth of advertising. – Jim Rohn’"'>
+						<i class="bi bi-telephone-plus-fill"></i> Calls & Missed
+					</li>
+
 					<h6 class="text-primary mt-2"><span><i class="fas fa-users"></i> ADMINISTRATION</span></h6>
 					<li class="nav-link" id="v-pills-shops-tab" data-bs-toggle="pill" data-bs-target="#v-pills-shops"
 						type="button" role="tab" aria-controls="v-pills-shops" aria-selected="false"
@@ -459,6 +467,17 @@
 							<div>
 								<div class="iframe-container" style="position:relative;padding-top:52.25%;">
 									<iframe name="dashboards" id="dashboards4" src="" frameborder="0" allowfullscreen
+										style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+								</div>
+							</div>
+						</div>
+
+						<!---     Calls  --->
+						<div class="tab-pane w3-animate-bottom" id="v-pills-calls" role="tabpanel"
+							aria-labelledby="v-pills-calls-tab">
+							<div>
+								<div class="iframe-container" style="position:relative;padding-top:52.25%;">
+									<iframe name="dashboards" id="dashboards10" src="" frameborder="0" allowfullscreen
 										style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 								</div>
 							</div>

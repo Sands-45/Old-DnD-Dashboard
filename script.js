@@ -113,8 +113,103 @@ var options = {
 };
 var chart = new ApexCharts(document.querySelector("#chartOne"), options);
 chart.render();
+// Dashboards =======================================
+const home = document.getElementById("v-pills-home-tab");
+const appraisals = document.getElementById("v-pills-appraisals-tab");
+const credits = document.getElementById("v-pills-credits-tab");
+const compliments = document.getElementById("v-pills-compliments-tab");
+const upSell = document.getElementById("v-pills-upsell-tab");
+const schedule = document.getElementById("v-pills-schedule-tab");
+const calls = document.getElementById("v-pills-calls-tab");
+const shops = document.getElementById("v-pills-shops-tab");
+const incomplete = document.getElementById("v-pills-incomplete-tab");
+
+home.addEventListener("click", () => {
+  document.getElementById("subhead").innerHTML =
+    'Projects & Reports  <i class="bi bi-columns-gap"></i>';
+  document.getElementById("quote").innerHTML =
+    "I hope you are having a great day 😉!";
+});
+
+appraisals.addEventListener("click", () => {
+  document.getElementById("dashboards").src =
+    "https://datastudio.google.com/embed/reporting/d055e3ac-b7c1-435b-b63d-68ac9e99eefc/page/p_gk2ba1vvlc";
+  document.getElementById("subhead").innerHTML =
+    'Performance Appraisals <i class="bi bi-clipboard-data"></i>';
+  document.getElementById("quote").innerHTML =
+    "“Leadership and learning are indispensable to each other.”John F. Kennedy 📊!";
+});
+
+credits.addEventListener("click", () => {
+  document.getElementById("dashboards2").src =
+    "https://datastudio.google.com/embed/reporting/2e1b5d10-d855-44b6-b498-953932a08a59/page/jKlQC";
+  document.getElementById("subhead").innerHTML =
+    'Call-Center Credits <i class="bi bi-cart-x"></i>';
+  document.getElementById("quote").innerHTML =
+    '"Your most unhappy customers are your greatest source of learning." - Bill Gates📚';
+});
+
+compliments.addEventListener("click", () => {
+  document.getElementById("dashboards3").src =
+    "https://datastudio.google.com/embed/reporting/ea997b03-538e-4b50-b512-998a673838e6/page/jKlQC";
+  document.getElementById("subhead").innerHTML =
+    'These are Compliments <i class="bi bi-emoji-smile"></i>';
+  document.getElementById("quote").innerHTML =
+    '"Always have an attitude of gratitude."- James R. Nowlin 🤞';
+});
+
+upSell.addEventListener("click", () => {
+  document.getElementById("subhead").innerHTML =
+    'Upsell Update <i class="bi bi-receipt-cutoff"></i>';
+  document.getElementById("dashboards4").src =
+    "https://datastudio.google.com/embed/reporting/ff366ab5-5b0d-4cfd-959c-bcdde083081e/page/jKlQC";
+  document.getElementById("quote").innerHTML =
+    "‘Absorb what is useful, discard what is not, add what is uniquely your own’ – Bruce Lee 📈";
+});
+
+schedule.addEventListener("click", () => {
+  document.getElementById("dashboards8").src = "";
+  document.getElementById("subhead").innerHTML =
+    'Schedules <i class="bi bi-calendar2-x"></i>';
+  document.getElementById("quote").innerHTML =
+    '"A schedule defends from chaos and whim. A net for catching days." – Stephan Covey 📅';
+});
+
+calls.addEventListener("click", () => {
+  document.getElementById("subhead").innerHTML =
+    'Calls & Missed Calls <i class="bi bi-telephone-plus-fill"></i>';
+  document.getElementById("dashboards10").src =
+    "https://datastudio.google.com/embed/reporting/51835266-272d-4ce3-82aa-216a6349de48/page/p_x3rjv9zwlc";
+  document.getElementById("quote").innerHTML =
+    "‘One customer well taken care of could be more valuable than $10,000 worth of advertising. – Jim Rohn’";
+});
+
+shops.addEventListener("click", () => {
+  document.getElementById("dashboards5").src = "";
+  document.getElementById("pass-box").style.display = "block";
+  document.getElementById("navbar").style.pointerEvents = "none";
+  document.getElementById("subhead").innerHTML =
+    'Restaurants Performance <i class="bi bi-shop"></i>';
+  document.getElementById("quote").innerHTML =
+    '"Unless you love everybody, you can’t sell anybody." – Dicky Fox 🛍';
+});
+
+incomplete.addEventListener("click", () => {
+  document.getElementById("dashboards6").src =
+    "https://datastudio.google.com/embed/reporting/49454e7b-3ef0-4d81-9d68-70a2d118fdf4/page/jKlQC";
+  document.getElementById("subhead").innerHTML =
+    'Incomplete Calls <i class="bi bi-telephone-x"></i>';
+  document.getElementById("quote").innerHTML =
+    '"Everything Starts with the customer." 📞';
+});
 
 //---------------------------------------------------
+let passboxHide = document.querySelector(".delete");
+passboxHide.addEventListener("click", () => {
+  document.getElementById("pass-box").style.display = "none";
+  document.getElementById("navbar").style.pointerEvents = "inherit";
+});
+
 //Admin Dashboards Access
 function restaurants() {
   if (document.getElementById("password").value !== "assurance@123") {

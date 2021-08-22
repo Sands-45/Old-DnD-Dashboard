@@ -28,6 +28,7 @@ sideNavToggle.addEventListener("click", () => {
     "scale(1, 1)";
   widthSetting = document.getElementById("navbar").style.width = "16.66666667%";
   document.getElementById("navbar").style.opacity = "1";
+  document.getElementById("mainContent").style.opacity = ".5";
   const div = document.getElementById("navbar");
   checkClassList = div.classList.contains("d-none");
   if (checkClassList == false) {
@@ -41,6 +42,7 @@ closeNav.addEventListener("click", () => {
   element.classList.add("d-none");
   const div = document.getElementById("navbar");
   checkClassList = div.classList.contains("d-none");
+  document.getElementById("mainContent").style.opacity = "1";
   if (checkClassList == false) {
     document.getElementById("mainContent").style.pointerEvents = "none";
   } else {

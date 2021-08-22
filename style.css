@@ -191,7 +191,6 @@ iframe::-webkit-scrollbar {
 .delete {
   float: right;
 }
-
 @media (max-width: 768px) {
   #projectTable {
     margin-top: 1rem !important;
@@ -219,5 +218,6 @@ iframe::-webkit-scrollbar {
 @media screen and (min-width: 1200px) {
   #mainContent{
     pointer-events: inherit !important;
+    opacity:1 !important;
   }
 }

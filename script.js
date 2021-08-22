@@ -20,6 +20,7 @@ function sideBar() {
 
 let sideNavToggle = document.getElementById("sideNavToggle");
 let closeNav = document.getElementById("closeNav");
+
 sideNavToggle.addEventListener("click", () => {
   let element = document.getElementById("navbar");
   element.classList.remove("d-none");
@@ -27,12 +28,24 @@ sideNavToggle.addEventListener("click", () => {
     "scale(1, 1)";
   widthSetting = document.getElementById("navbar").style.width = "16.66666667%";
   document.getElementById("navbar").style.opacity = "1";
-  document.getElementById("mainContent").style.pointerEvents = "none";
+  const div = document.getElementById("navbar");
+  checkClassList = div.classList.contains("d-none");
+  if (checkClassList == false) {
+    document.getElementById("mainContent").style.pointerEvents = "none";
+  } else {
+    document.getElementById("mainContent").style.pointerEvents = "inherit";
+  }
 });
 closeNav.addEventListener("click", () => {
   let element = document.getElementById("navbar");
   element.classList.add("d-none");
-  document.getElementById("mainContent").style.pointerEvents = "inherit";
+  const div = document.getElementById("navbar");
+  checkClassList = div.classList.contains("d-none");
+  if (checkClassList == false) {
+    document.getElementById("mainContent").style.pointerEvents = "none";
+  } else {
+    document.getElementById("mainContent").style.pointerEvents = "inherit";
+  }
 });
 
 /* Charts or Dashboard Reports */

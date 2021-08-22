@@ -199,7 +199,7 @@ iframe::-webkit-scrollbar {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #navbar li {
     font-size: 13px !important;
   }

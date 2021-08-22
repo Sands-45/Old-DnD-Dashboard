@@ -216,3 +216,8 @@ iframe::-webkit-scrollbar {
     transition: width 0.5s, opacity 0.4s, background 0.4s;
   }
 }
+@media screen and (min-width: 1200px) {
+  #mainContent{
+    pointer-events: inherit !important;
+  }
+}

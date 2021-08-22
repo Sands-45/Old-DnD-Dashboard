@@ -24,18 +24,11 @@
 			<div id="navbar" class="col-auto col-md-2 col-xl-2
 		 bg-black w3-animate-left
 		 navbar d-none d-xl-block navbar-expand-lg">
+
 				<!-- SideNav-Items -->
 				<div class="sidebar-menu w3-animate-left nav flex-column nav-pills" id="v-pills-tab" role="tablist"
 					aria-orientation="vertical">
-					<!-- Controls-->
-					<div id="controls" class="text-primary bg-dark mt-5 p-1 center me-md-3">
-						<span class="p-1"><a
-								href="https://join.slack.com/t/dialndine/shared_invite/zt-rujxd0k2-BaeGPsJYldCA5zfBAHB3Mg"
-								target="_blank"><i class="bi bi-slack"></a></i></span>
-						<span class="p-1"><i class="bi bi-gear"></i></span>
-						<span class="p-1"><i class="bi bi-toggle-off"></i></span>
-						<span class="p-1"><i class="bi bi-box-arrow-right"></i></span>
-					</div>
+					<button id="closeNav" class="delete d-xl-none d-xxl-none bg-dark position-absolute end-0"></button>
 					<div id="user" class="text-light pt-1 mb-4">
 						<img src="./images/user.jpg" class="w-25 rounded m-1 mt-3 logoD mx-auto d-block" alt="LOGO">
 						<small class="center text-primary">@dialndine</small>
@@ -105,10 +98,10 @@
 			</div>
 			<!-- End Of NavBar -->
 
-			<div class="col">
+			<div id="mainContent" class="col">
 				<!-------------------------Restricted Dashboards---------------------------- -->
 				<div id="pass-box" class=" bg-dark pt-3">
-					<button class="delete"></button>
+					<button class="delete close-box"></button>
 					<form action="javascript:;" onsubmit="restaurants(this)">
 						<p id="response" class="mt-5 has-text-white center">Restricted Access 🔒</p>
 						<label class="center mt-3" for="pass position-absolute">Enter Password</label>
@@ -132,14 +125,13 @@
 					<section class="hero level is-small mb-1">
 						<div class="hero-body">
 							<div class="columns position-relative">
-								<div class="column is-2">
+								<div class="column  float-start is-2">
 									<button onclick="sideBar()" type="button"
-										class="btn position-absolute start-0 btn-outline-secondary d-none d-xl-block">
+										class="btn btn-outline-secondary d-none d-xl-block">
 										<i class="bi bi-list"></i>
 									</button>
-									<div class="d-xl-none d-l-block d-md-block d-none position-absolute start-0">
-										<button onclick="sideNav()" class="btn btn-outline-secondary" type="button"
-											aria-expanded="false">
+									<div id="sideNavToggle" class="d-xl-none d-xxl-none">
+										<button class="btn btn-outline-secondary" type="button" aria-expanded="false">
 											<i class="bi bi-list"></i>
 										</button>
 									</div>
@@ -153,8 +145,7 @@
 									</h2>
 								</div>
 								<div class="column is-2">
-									<div
-										class="dropdown position-absolute d-none d-md-block d-lg-block d-xl-block end-0 mt-3 top-0">
+									<div class="dropdown  float-end d-none d-md-block d-lg-block d-xl-block end-0">
 										<button class="btn btn-outline-secondary dropdown-toggle" type="button"
 											id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 											<i class="bi bi-ui-checks"></i> Forms

@@ -18,14 +18,22 @@ function sideBar() {
   }
 }
 
-function sideNav() {
-  var element = document.getElementById("navbar");
-  element.classList.toggle("d-none");
+let sideNavToggle = document.getElementById("sideNavToggle");
+let closeNav = document.getElementById("closeNav");
+sideNavToggle.addEventListener("click", () => {
+  let element = document.getElementById("navbar");
+  element.classList.remove("d-none");
   transformSetting = document.getElementById("navbar").style.transform =
     "scale(1, 1)";
   widthSetting = document.getElementById("navbar").style.width = "16.66666667%";
   document.getElementById("navbar").style.opacity = "1";
-}
+  document.getElementById("mainContent").style.pointerEvents = "none";
+});
+closeNav.addEventListener("click", () => {
+  let element = document.getElementById("navbar");
+  element.classList.add("d-none");
+  document.getElementById("mainContent").style.pointerEvents = "inherit";
+});
 
 /* Charts or Dashboard Reports */
 //Projects Chart =======================================================
@@ -204,7 +212,7 @@ incomplete.addEventListener("click", () => {
 });
 
 //---------------------------------------------------
-let passboxHide = document.querySelector(".delete");
+let passboxHide = document.querySelector(".close-box");
 passboxHide.addEventListener("click", () => {
   document.getElementById("pass-box").style.display = "none";
   document.getElementById("navbar").style.pointerEvents = "inherit";

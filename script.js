@@ -134,7 +134,7 @@ var options = {
     },
   },
 };
-var chart = new ApexCharts(document.querySelector("#chartOne"), options);
+let chart = new ApexCharts(document.querySelector("#chartOne"), options);
 chart.render();
 // Dashboards =======================================
 const home = document.getElementById("v-pills-home-tab");

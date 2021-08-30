@@ -221,9 +221,9 @@ incomplete.addEventListener("click", () => {
   document.getElementById("dashboards6").src =
     "https://datastudio.google.com/embed/reporting/49454e7b-3ef0-4d81-9d68-70a2d118fdf4/page/jKlQC";
   document.getElementById("subhead").innerHTML =
-    'Incomplete Calls <i class="bi bi-telephone-x"></i>';
+    'Queries & Complaints <i class="bi bi-telephone-x"></i>';
   document.getElementById("quote").innerHTML =
-    '"Everything Starts with the customer." 📞';
+    '"Everything Starts with the customer." 😑 ';
 });
 
 //---------------------------------------------------

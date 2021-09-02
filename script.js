@@ -234,7 +234,10 @@ passboxHide.addEventListener("click", () => {
 });
 
 //Admin Dashboards Access
-function restaurants() {
+let accessBox =document.querySelector("[data-restricted-dash]");
+
+accessBox.addEventListener("submit",(e)=>{
+  e.preventDefault();
   if (document.getElementById("password").value !== "assurance@123") {
     document.getElementById("dashboards5").src = "";
     document.getElementById("response").innerHTML = "Incorrect password 🤨";
@@ -244,7 +247,8 @@ function restaurants() {
     document.getElementById("pass-box").style.display = "none";
     document.getElementById("navbar").style.pointerEvents = "inherit";
   }
-}
+})
+
 function queries() {
   if (document.getElementById("password1").value !== "assurance@123") {
     document.getElementById("dashboards6").src = "";
